@@ -1,0 +1,32 @@
+$logo-footer-color: #ffc600;
+
+.logo {
+  display: block;
+
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 48px;
+  font-family: $font-gilroy;
+  color: $black;
+  text-transform: uppercase;
+
+  outline: none;
+
+  transition: opacity 0.1s linear;
+
+  &--footer {
+    color: $logo-footer-color;
+  }
+}
+
+.logo[href] {
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

@@ -6,37 +6,56 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="page-header">
-      <div class="page-header__logo"><a class="logo">Device</a></div>
+      <h1 class="page-header__logo"><a class="logo" href="index.html">Device</a></h1>
       <nav class="page-header__nav">
         <ul class="user-nav">
           <li class="user-nav__item  user-nav__item--search">
             <form class="user-nav__form" action="#" method="GET">
               <label class="user-nav__label" for="search">
                 <span class="visually-hidden">Поиск по сайту</span>
+                <svg class="user-nav__icon" width="16" height="16"><use xlink:href="#icon-search"></svg>
                 <input class="user-nav__search" type="search" id="search" name="search" placeholder="Поиск по сайту">
               </label>
             </form>
           </li>
-          <li class="user-nav__item  user-nav__item--login"><a href="login.html">Войти</a></li>
-          <li class="user-nav__item  user-nav__item--compare"><a href="compare.html">Сравнить</a></li>
-          <li class="user-nav__item  user-nav__item--cart"><a href="cart.html">Корзина</a></li>
+          <li class="user-nav__item  user-nav__item--login">
+            <a class="user-nav__link" href="login.html">
+              <svg class="user-nav__icon" width="13" height="12"><use xlink:href="#icon-user"></svg>
+              <span>Войти</span>
+            </a>
+          </li>
+          <li class="user-nav__item  user-nav__item--compare">
+            <a class="user-nav__link" href="compare.html">
+              <svg class="user-nav__icon" width="10" height="10"><use xlink:href="#icon-compare"></svg>
+              <span>Сравнить</span>
+            </a>
+          </li>
+          <li class="user-nav__item  user-nav__item--cart">
+            <a class="user-nav__link" href="cart.html">
+              <svg class="user-nav__icon" width="12" height="12"><use xlink:href="#icon-cart"></svg>
+              <span>Корзина</span>
+            </a>
+          </li>
         </ul>
         <ul class="main-nav">
           <li class="main-nav__item  main-nav__item--catalog">
             <a href="catalog.html">Каталог товаров</a>
             <ul class="main-nav__add-list">
-              <li class="main-nav__add-item"><a href="category-1.html">Виртуальная реальность</a></li>
-              <li class="main-nav__add-item"><a href="category-2.html">Монопады для селфи</a></li>
-              <li class="main-nav__add-item"><a href="category-3.html">Экшн-камеры</a></li>
-              <li class="main-nav__add-item"><a href="category-4.html">Фитнес-браслеты</a></li>
-              <li class="main-nav__add-item"><a href="category-5.html">Умные часы</a></li>
-              <li class="main-nav__add-item"><a href="category-6.html">Квадрокоптеры</a></li>
+              <li class="main-nav__add-item"><a class="main-nav__add-link" href="category-1.html">Виртуальная реальность</a></li>
+              <li class="main-nav__add-item"><a class="main-nav__add-link" href="catalog.html">Монопады для селфи</a></li>
+              <li class="main-nav__add-item"><a class="main-nav__add-link" href="category-3.html">Экшн-камеры</a></li>
+              <li class="main-nav__add-item"><a class="main-nav__add-link" href="category-4.html">Фитнес-браслеты</a></li>
+              <li class="main-nav__add-item"><a class="main-nav__add-link" href="category-5.html">Умные часы</a></li>
+              <li class="main-nav__add-item"><a class="main-nav__add-link" href="category-6.html">Квадрокоптеры</a></li>
             </ul>
           </li>
-          <li class="main-nav__item"><a href="delivery.html">Доставка</a></li>
-          <li class="main-nav__item"><a href="warranty.html">Гарантия</a></li>
-          <li class="main-nav__item"><a href="conctacts.html">Контакты</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="delivery.html">Доставка</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="warranty.html">Гарантия</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="conctacts.html">Контакты</a></li>
         </ul>
       </nav>
     </header>
@@ -127,7 +146,7 @@
           <li class="catalog__item">
             <h4 class="catalog__item-title"><a href="item.html">Любительская селфи-палка</a></h4>
             <p class="catalog__item-price">500 руб.</p>
-            <img src="img/catalog-item-1.jpg" width="100" height="100" alt="Любительская селфи-палка">
+            <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
             <div class="catalog__hover">
               <a class="catalog__hover-btn  btn" href="cart.html">В корзину</a>
               <a class="catalog__hover-compare" href="compare.html">Добавить к сравнению</a>
@@ -136,7 +155,7 @@
           <li class="catalog__item">
             <h4 class="catalog__item-title"><a href="item.html">Профессиональная селфи-палка</a></h4>
             <p class="catalog__item-price">1 500 руб.</p>
-            <img src="img/catalog-item-2.jpg" width="100" height="100" alt="">
+            <img src="img/item-2.jpg" width="360" height="380" alt="">
             <div class="catalog__hover">
               <a class="catalog__hover-btn  btn" href="cart.html">В корзину</a>
               <a class="catalog__hover-compare" href="compare.html">Добавить к сравнению</a>
@@ -145,7 +164,7 @@
           <li class="catalog__item">
             <h4 class="catalog__item-title"><a href="item.html">Непотопляемая селфи-палка</a></h4>
             <p class="catalog__item-price">2 500 руб.</p>
-            <img src="img/catalog-item-3.jpg" width="100" height="100" alt="">
+            <img src="img/item-3.jpg" width="360" height="380" alt="">
             <div class="catalog__hover">
               <a class="catalog__hover-btn  btn" href="cart.html">В корзину</a>
               <a class="catalog__hover-compare" href="compare.html">Добавить к сравнению</a>
@@ -154,7 +173,7 @@
           <li class="catalog__item">
             <h4 class="catalog__item-title"><a href="item.html">Селфи-палка «Следуй за мной»</a></h4>
             <p class="catalog__item-price">4 9000 руб.</p>
-            <img src="img/catalog-item-4.jpg" width="100" height="100" alt="">
+            <img src="img/item-4.jpg" width="360" height="380" alt="">
             <div class="catalog__hover">
               <a class="catalog__hover-btn  btn" href="cart.html">В корзину</a>
               <a class="catalog__hover-compare" href="compare.html">Добавить к сравнению</a>
@@ -182,15 +201,15 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__left-column">
-        <p class="page-footer__logo"><a class="logo  logo--footer">Device</a></p>
+        <p class="page-footer__logo"><a class="logo  logo--footer" href="index.html">Device</a></p>
         <p class="page-footer__address">г. Москва, ул. Строителей, 15
         </p>
       </div>
       <div class="page-footer__middle-column">
         <ul class="main-nav">
-          <li class="main-nav__item"><a href="delivery.html">Доставка</a></li>
-          <li class="main-nav__item"><a href="warranty.html">Гарантия</a></li>
-          <li class="main-nav__item"><a href="conctacts.html">Контакты</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="delivery.html">Доставка</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="warranty.html">Гарантия</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="conctacts.html">Контакты</a></li>
         </ul>
         <ul class="socials-list">
           <li class="socials-list__item">
@@ -211,10 +230,25 @@
         </ul>
       </div>
       <div class="page-footer__right-column">
-        <ul class="user-nav">
-          <li class="user-nav__item  user-nav__item--login"><a href="login.html">Войти</a></li>
-          <li class="user-nav__item  user-nav__item--compare"><a href="compare.html">Сравнить</a></li>
-          <li class="user-nav__item  user-nav__item--cart"><a href="cart.html">Корзина</a></li>
+        <ul class="user-nav  user-nav--footer">
+          <li class="user-nav__item  user-nav__item--login">
+            <a class="user-nav__link" href="login.html">
+              <svg class="user-nav__icon" width="13" height="12"><use xlink:href="#icon-user"></svg>
+              <span>Войти</span>
+            </a>
+          </li>
+          <li class="user-nav__item  user-nav__item--compare">
+            <a class="user-nav__link" href="compare.html">
+              <svg class="user-nav__icon" width="10" height="10"><use xlink:href="#icon-compare"></svg>
+              <span>Сравнить</span>
+            </a>
+          </li>
+          <li class="user-nav__item  user-nav__item--cart">
+            <a class="user-nav__link" href="cart.html">
+              <svg class="user-nav__icon" width="12" height="12"><use xlink:href="#icon-cart"></svg>
+              <span>Корзина</span>
+            </a>
+          </li>
         </ul>
       </div>
       <p class="page-footer__phone">
@@ -242,10 +276,6 @@
         <button class="modal__btn  btn" type="submit"></button>
         <button class="modal__close"><span class="visually-hidden">Закрыть</span></button>
       </form>
-    </section>
-    <section class="modal  modal-map">
-      <h2 class="visually-hidden">Схема проезда</h2>
-      <img src="img/map.png" width="100" height="100" alt="Схема проезда">
     </section>
     <script src="js/script.js"></script>
   </body>

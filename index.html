@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="page-header">
       <h1 class="page-header__logo"><a class="logo">Device</a></h1>
       <nav class="page-header__nav">
@@ -14,29 +17,45 @@
             <form class="user-nav__form" action="#" method="GET">
               <label class="user-nav__label" for="search">
                 <span class="visually-hidden">Поиск по сайту</span>
+                <svg class="user-nav__icon" width="16" height="16"><use xlink:href="#icon-search"></svg>
                 <input class="user-nav__search" type="search" id="search" name="search" placeholder="Поиск по сайту">
               </label>
             </form>
           </li>
-          <li class="user-nav__item  user-nav__item--login"><a href="login.html">Войти</a></li>
-          <li class="user-nav__item  user-nav__item--compare"><a href="compare.html">Сравнить</a></li>
-          <li class="user-nav__item  user-nav__item--cart"><a href="cart.html">Корзина</a></li>
+          <li class="user-nav__item  user-nav__item--login">
+            <a class="user-nav__link" href="login.html">
+              <svg class="user-nav__icon" width="13" height="12"><use xlink:href="#icon-user"></svg>
+              <span>Войти</span>
+            </a>
+          </li>
+          <li class="user-nav__item  user-nav__item--compare">
+            <a class="user-nav__link" href="compare.html">
+              <svg class="user-nav__icon" width="10" height="10"><use xlink:href="#icon-compare"></svg>
+              <span>Сравнить</span>
+            </a>
+          </li>
+          <li class="user-nav__item  user-nav__item--cart">
+            <a class="user-nav__link" href="cart.html">
+              <svg class="user-nav__icon" width="12" height="12"><use xlink:href="#icon-cart"></svg>
+              <span>Корзина</span>
+            </a>
+          </li>
         </ul>
         <ul class="main-nav">
           <li class="main-nav__item  main-nav__item--catalog">
             <a href="catalog.html">Каталог товаров</a>
             <ul class="main-nav__add-list">
-              <li class="main-nav__add-item"><a href="category-1.html">Виртуальная реальность</a></li>
-              <li class="main-nav__add-item"><a href="category-2.html">Монопады для селфи</a></li>
-              <li class="main-nav__add-item"><a href="category-3.html">Экшн-камеры</a></li>
-              <li class="main-nav__add-item"><a href="category-4.html">Фитнес-браслеты</a></li>
-              <li class="main-nav__add-item"><a href="category-5.html">Умные часы</a></li>
-              <li class="main-nav__add-item"><a href="category-6.html">Квадрокоптеры</a></li>
+              <li class="main-nav__add-item"><a class="main-nav__add-link" href="category-1.html">Виртуальная реальность</a></li>
+              <li class="main-nav__add-item"><a class="main-nav__add-link" href="catalog.html">Монопады для селфи</a></li>
+              <li class="main-nav__add-item"><a class="main-nav__add-link" href="category-3.html">Экшн-камеры</a></li>
+              <li class="main-nav__add-item"><a class="main-nav__add-link" href="category-4.html">Фитнес-браслеты</a></li>
+              <li class="main-nav__add-item"><a class="main-nav__add-link" href="category-5.html">Умные часы</a></li>
+              <li class="main-nav__add-item"><a class="main-nav__add-link" href="category-6.html">Квадрокоптеры</a></li>
             </ul>
           </li>
-          <li class="main-nav__item"><a href="delivery.html">Доставка</a></li>
-          <li class="main-nav__item"><a href="warranty.html">Гарантия</a></li>
-          <li class="main-nav__item"><a href="conctacts.html">Контакты</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="delivery.html">Доставка</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="warranty.html">Гарантия</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="conctacts.html">Контакты</a></li>
         </ul>
       </nav>
     </header>
@@ -68,7 +87,7 @@
           <table class="slider__features">
             <tr>
               <td>48 часов</td>
-             </tr>
+            </tr>
             <tr>
               <td>Без подзарядки</td>
             </tr>
@@ -105,37 +124,37 @@
         <li class="popular__item">
           <a class="popular__link"  href="item-1.html">
             <h3 class="popular__title">Виртуальная реальность</h3>
-            <img src="img/popular-1.png" width="100" height="100" alt="Виртуальная реальность">
+            <img src="img/popular-1.svg" width="97" height="55" alt="Виртуальная реальность">
           </a>
         </li>
         <li class="popular__item">
           <a class="popular__link"  href="item-2.html">
             <h3 class="popular__title">Моноподы для селфи</h3>
-            <img src="img/popular-1.png" width="100" height="100" alt="Моноподы для селфи">
+            <img src="img/popular-2.svg" width="86" height="117" alt="Моноподы для селфи">
           </a>
         </li>
         <li class="popular__item">
           <a class="popular__link"  href="item-3.html">
             <h3 class="popular__title">Экшн-камеры</h3>
-            <img src="img/popular-1.png" width="100" height="100" alt="Экшн-камеры">
+            <img src="img/popular-3.svg" width="71" height="87" alt="Экшн-камеры">
           </a>
         </li>
         <li class="popular__item">
           <a class="popular__link"  href="item-4.html">
             <h3 class="popular__title">Фитнес-браслеты</h3>
-            <img src="img/popular-1.png" width="100" height="100" alt="Фитнес-браслеты">
+            <img src="img/popular-4.svg" width="107" height="65" alt="Фитнес-браслеты">
           </a>
         </li>
         <li class="popular__item">
           <a class="popular__link"  href="item-5.html">
             <h3 class="popular__title">Умные часы</h3>
-            <img src="img/popular-1.png" width="100" height="100" alt="Умные часы">
+            <img src="img/popular-5.svg" width="56" height="98" alt="Умные часы">
           </a>
         </li>
         <li class="popular__item">
           <a class="popular__link"  href="item-6.html">
             <h3 class="popular__title">Квадрокоптеры</h3>
-            <img src="img/popular-1.png" width="100" height="100" alt="Квадрокоптеры">
+            <img src="img/popular-6.svg" width="132" height="69" alt="Квадрокоптеры">
           </a>
         </li>
       </ul>
@@ -145,15 +164,15 @@
       <ul class="services__controls">
         <li class="services__controls-item  services__controls-item--delivery">
           <input class="services__controls-input  visually-hidden" id="delivery" name="services" type="radio" checked>
-          <label for="delivery">Доставка</label>
+          <label class="btn  btn--black" for="delivery">Доставка</label>
         </li>
         <li class="services__controls-item  services__controls-item--warranty">
           <input class="services__controls-input  visually-hidden" id="warranty" name="services" type="radio">
-          <label for="warranty">Гарантия</label>
+          <label class="btn  btn--black" for="warranty">Гарантия</label>
         </li>
         <li class="services__controls-item  services__controls-item--credit">
           <input class="services__controls-input  visually-hidden" id="credit" name="services" type="radio">
-          <label for="credit">Кредит</label>
+          <label class="btn  btn--black" for="credit">Кредит</label>
         </li>
       </ul>
       <ul class="services__content">
@@ -177,23 +196,23 @@
       <h2 class="visually-hidden">Партнеры</h2>
       <ul class="partners__list">
         <li class="partners__item">
-          <a href="partner-1">
-            <img class="partners__logo" width="100" height="100" src="img/partners.png" alt="dji">
+          <a href="partner-1.html">
+            <img class="partners__logo" src="img/logo-1.jpg" width="260" height="100" alt="dji">
           </a>
         </li>
         <li class="partners__item">
-          <a href="partner-1">
-            <img class="partners__logo" width="100" height="100" src="img/partners.png" alt="SP Gadgets">
+          <a href="partner-2.html">
+            <img class="partners__logo" src="img/logo-2.jpg" width="260" height="100" alt="SP Gadgets">
           </a>
         </li>
         <li class="partners__item">
-          <a href="partner-1">
-            <img class="partners__logo" width="100" height="100" src="img/partners.png" alt="GoPro">
+          <a href="partner-3.html">
+            <img class="partners__logo" src="img/logo-3.jpg" width="260" height="100" alt="GoPro">
           </a>
         </li>
         <li class="partners__item">
-          <a href="partner-1">
-            <img class="partners__logo" width="100" height="100" src="img/partners.png" alt="Vive">
+          <a href="partner-4.html">
+            <img class="partners__logo" src="img/logo-4.jpg" width="260" height="100" alt="Vive">
           </a>
         </li>
       </ul>
@@ -215,7 +234,7 @@
         <h3 class="contacts__title">Контакты</h3>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
         <div class="contacts__map">
-          <img class="contacts__map-pic" src="img/map.png" width="100" height="100" alt="Схема проезда">
+          <img class="contacts__map-pic" src="img/map.jpg" width="560" height="222" alt="Схема проезда">
         </div>
         <a class="contacts__btn  btn" href="about-us.html">Подробнее о нас</a>
       </article>
@@ -228,9 +247,9 @@
       </div>
       <div class="page-footer__middle-column">
         <ul class="main-nav">
-          <li class="main-nav__item"><a href="delivery.html">Доставка</a></li>
-          <li class="main-nav__item"><a href="warranty.html">Гарантия</a></li>
-          <li class="main-nav__item"><a href="conctacts.html">Контакты</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="delivery.html">Доставка</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="warranty.html">Гарантия</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="conctacts.html">Контакты</a></li>
         </ul>
         <ul class="socials-list">
           <li class="socials-list__item">
@@ -251,10 +270,25 @@
         </ul>
       </div>
       <div class="page-footer__right-column">
-        <ul class="user-nav">
-          <li class="user-nav__item  user-nav__item--login"><a href="login.html">Войти</a></li>
-          <li class="user-nav__item  user-nav__item--compare"><a href="compare.html">Сравнить</a></li>
-          <li class="user-nav__item  user-nav__item--cart"><a href="cart.html">Корзина</a></li>
+        <ul class="user-nav  user-nav--footer">
+          <li class="user-nav__item  user-nav__item--login">
+            <a class="user-nav__link" href="login.html">
+              <svg class="user-nav__icon" width="13" height="12"><use xlink:href="#icon-user"></svg>
+              <span>Войти</span>
+            </a>
+          </li>
+          <li class="user-nav__item  user-nav__item--compare">
+            <a class="user-nav__link" href="compare.html">
+              <svg class="user-nav__icon" width="10" height="10"><use xlink:href="#icon-compare"></svg>
+              <span>Сравнить</span>
+            </a>
+          </li>
+          <li class="user-nav__item  user-nav__item--cart">
+            <a class="user-nav__link" href="cart.html">
+              <svg class="user-nav__icon" width="12" height="12"><use xlink:href="#icon-cart"></svg>
+              <span>Корзина</span>
+            </a>
+          </li>
         </ul>
       </div>
       <p class="page-footer__phone">
@@ -285,7 +319,7 @@
     </section>
     <section class="modal  modal-map">
       <h2 class="visually-hidden">Схема проезда</h2>
-      <img src="img/map.png" width="100" height="100" alt="Схема проезда">
+      <img src="img/map-big.jpg" width="960" height="559" alt="Схема проезда">
     </section>
     <script src="js/script.js"></script>
   </body>
