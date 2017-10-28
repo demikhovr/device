@@ -1,0 +1,7 @@
+@mixin container {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 auto;
+  padding-right: 9.375%;
+  padding-left: 9.375%;
+}

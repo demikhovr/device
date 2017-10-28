@@ -2,7 +2,7 @@
 
 var gulp = require("gulp");
 
-var less = require("gulp-less");
+var sass = require("gulp-sass");
 
 var plumber = require("gulp-plumber");
 
@@ -45,9 +45,9 @@ gulp.task("html", function() {
 });
 
 gulp.task("style", function() {
-  gulp.src("less/style.less")
+  gulp.src("sass/style.scss")
     .pipe(plumber())
-    .pipe(less())
+    .pipe(sass())
     .pipe(postcss([
       autoprefixer({browsers: [
         "last 2 versions"
@@ -96,7 +96,7 @@ gulp.task("serve", function() {
   server.init({
     server: "build/",
   });
-  gulp.watch("less/**/*.less", ["style"]);
+  gulp.watch("sass/**/*.scss", ["style"]);
   gulp.watch("*.html", ["html"]);
   gulp.watch("js/*.js", ["scripts"]);
 });
