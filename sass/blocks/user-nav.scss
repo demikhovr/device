@@ -1,0 +1,13 @@
+.user-nav {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.user-nav__item {
+  &--search {
+    margin-right: auto;
+  }
+}
