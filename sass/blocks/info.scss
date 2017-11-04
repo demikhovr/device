@@ -1,0 +1,19 @@
+.info {
+  margin-bottom: 87px;
+}
+
+.info__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @include container;
+}
+
+.info__about-us {
+  width: 560px;
+}
+
+.info__contacts {
+  width: 560px;
+}

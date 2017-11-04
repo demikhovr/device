@@ -25,18 +25,20 @@
           <nav class="page-header__nav">
             <ul class="page-header__user-nav  user-nav">
               <li class="user-nav__item  user-nav__item--search">
-                <form class="user-nav__form" action="#" method="GET">
-                  <label class="user-nav__label" for="search">
+                <form class="user-nav__search-form" action="#" method="GET">
+                  <label class="user-nav__search-label" for="search">
                     <span class="visually-hidden">Поиск по сайту</span>
-                    <svg class="user-nav__icon" width="16" height="16"><use xlink:href="#icon-search"></svg>
-                    <input class="user-nav__search" type="search" id="search" name="search" placeholder="Поиск по сайту">
+                    <svg class="user-nav__search-icon" width="16" height="16"><use xlink:href="#icon-search"></svg>
                   </label>
+                  <input class="user-nav__search-input  user-nav__search-input--nojs" type="search" id="search" name="search" placeholder="Поиск по сайту">
+                  <button class="user-nav__search-submit  user-nav__search-submit--animation" type="submit">Найти</button>
                 </form>
               </li>
               <li class="user-nav__item  user-nav__item--login">
                 <a class="user-nav__link" href="login.html">
                   <svg class="user-nav__icon" width="13" height="12"><use xlink:href="#icon-user"></svg>
-                  <span>Войти</span>
+                  <span>Валентин петухов</span>
+                  <a class="user-nav__logout" href="logout.html">Выйти</a>
                 </a>
               </li>
               <li class="user-nav__item  user-nav__item--compare">
@@ -225,63 +227,65 @@
       </section>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__left-column">
-        <p class="page-footer__logo"><a class="logo  logo--footer" href="index.html">Device</a></p>
-        <p class="page-footer__address">г. Москва, ул. Строителей, 15
-        </p>
+      <div class="page-footer__wrapper">
+        <div class="page-footer__left-column">
+          <p class="page-footer__logo"><a class="logo  logo--footer" href="index.html">Device</a></p>
+          <p class="page-footer__address">г. Москва, ул. Строителей, 15
+          </p>
+        </div>
+        <div class="page-footer__middle-column">
+          <ul class="page-footer__main-nav  main-nav">
+            <li class="main-nav__item"><a class="main-nav__link" href="delivery.html">Доставка</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="warranty.html">Гарантия</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="conctacts.html">Контакты</a></li>
+          </ul>
+          <ul class="socials-list">
+            <li class="socials-list__item">
+              <a class="socials-list__btn  socials-list__btn--fb" href="vk.com">
+                <span class="visually-hidden">Фейсбук</span>
+              </a>
+            </li>
+            <li class="socials-list__item">
+              <a class="socials-list__btn  socials-list__btn--inst" href="instagram.com">
+                <span class="visually-hidden">Инстаграм</span>
+              </a>
+            </li>
+            <li class="socials-list__item">
+              <a class="socials-list__btn  socials-list__btn--tw" href="twitter.com">
+                <span class="visually-hidden">Твиттер</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__right-column">
+          <ul class="page-footer__user-nav  user-nav">
+            <li class="user-nav__item  user-nav__item--login">
+              <a class="user-nav__link" href="login.html">
+                <svg class="user-nav__icon" width="13" height="12"><use xlink:href="#icon-user"></svg>
+                <span>Войти</span>
+              </a>
+            </li>
+            <li class="user-nav__item  user-nav__item--compare">
+              <a class="user-nav__link" href="compare.html">
+                <svg class="user-nav__icon" width="10" height="10"><use xlink:href="#icon-compare"></svg>
+                <span>Сравнить</span>
+              </a>
+            </li>
+            <li class="user-nav__item  user-nav__item--cart">
+              <a class="user-nav__link" href="cart.html">
+                <svg class="user-nav__icon" width="12" height="12"><use xlink:href="#icon-cart"></svg>
+                <span>Корзина</span>
+              </a>
+            </li>
+          </ul>
+          <p class="page-footer__phone">
+            <a href="tel:74954959595">Тел.: +7 (495) 495-95-95</a>
+          </p>
+          <p class="page-footer__copyright">
+            <a href="htmlacademy.ru"><span class="visually-hidden">Разработано в HTML Academy</span></a>
+          </p>
+        </div>
       </div>
-      <div class="page-footer__middle-column">
-        <ul class="main-nav">
-          <li class="main-nav__item"><a class="main-nav__link" href="delivery.html">Доставка</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="warranty.html">Гарантия</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="conctacts.html">Контакты</a></li>
-        </ul>
-        <ul class="socials-list">
-          <li class="socials-list__item">
-            <a class="socials-list__btn" href="vk.com">
-              <span class="visually-hidden">Вконтакте</span>
-            </a>
-          </li>
-          <li class="socials-list__item">
-            <a class="socials-list__btn" href="instagram.com">
-              <span class="visually-hidden">Инстаграм</span>
-            </a>
-          </li>
-          <li class="socials-list__item">
-            <a class="socials-list__btn" href="twitter.com">
-              <span class="visually-hidden">Твиттер</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__right-column">
-        <ul class="user-nav  user-nav--footer">
-          <li class="user-nav__item  user-nav__item--login">
-            <a class="user-nav__link" href="login.html">
-              <svg class="user-nav__icon" width="13" height="12"><use xlink:href="#icon-user"></svg>
-              <span>Войти</span>
-            </a>
-          </li>
-          <li class="user-nav__item  user-nav__item--compare">
-            <a class="user-nav__link" href="compare.html">
-              <svg class="user-nav__icon" width="10" height="10"><use xlink:href="#icon-compare"></svg>
-              <span>Сравнить</span>
-            </a>
-          </li>
-          <li class="user-nav__item  user-nav__item--cart">
-            <a class="user-nav__link" href="cart.html">
-              <svg class="user-nav__icon" width="12" height="12"><use xlink:href="#icon-cart"></svg>
-              <span>Корзина</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <p class="page-footer__phone">
-        <a href="tel:74954959595">Тел.: +7 (495) 495-95-95</a>
-      </p>
-      <p class="page-footer__copyright">
-        <a href="htmlacademy.ru"><span class="visually-hidden"></span></a>
-      </p>
     </footer>
     <section class="modal  modal--write-us">
       <h2 class="visually-hidden">Напишите нам!</h2>

@@ -35,12 +35,13 @@
 
   font-display: swap;
   src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
-    url("../fonts/opensanslight.woff") format("woff");
+    url("../fonts/gilroyextrabold.woff") format("woff");
 }
 
 body {
   margin: 0;
 
+  font-weight: 300;
   font-size: 15px;
   line-height: 30px;
   font-family: "OpenSans", "Arial", sans-serif;
@@ -53,6 +54,8 @@ html {
 }
 
 * {
+  box-sizing: inherit;
+
   &::before,
   &::after {
     box-sizing: inherit;

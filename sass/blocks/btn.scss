@@ -57,14 +57,4 @@ $btn-font-weight: 800;
   &:focus::before {
     transform: scaleY(1);
   }
-
-  &--black {
-    &:active {
-      color: #f7e184;
-    }
-
-    &:active::before {
-      background-color: $black;
-    }
-  }
 }
