@@ -381,26 +381,30 @@
       <form class="modal__form" action="#" method="POST">
         <label class="modal__label" for="name">
           <span>Ваше имя:</span>
-          <input class="modal__input" type="text" id="name" placeholder="Представьтесь, пожалуйста">
+          <input class="modal__input" type="text" id="name" placeholder="Представьтесь, пожалуйста" required>
         </label>
         <label class="modal__label" for="email">
           <span>Ваш e-mail:</span>
-          <input class="modal__input" type="email" id="email" placeholder="Представьтесь, пожалуйста">
+          <input class="modal__input" type="email" id="email" placeholder="Для отправки ответа" required>
         </label>
-        <label class="modal__label" for="comment">
+        <label class="modal__label  modal__label--textarea" for="comment">
           <span>Текст письма:</span>
-          <input class="modal__input" type="text" id="comment" placeholder="В свободной форме">
+          <textarea class="modal__input  modal__input--textarea" id="comment" placeholder="В свободной форме" required></textarea>
         </label>
-        <button class="modal__btn  btn" type="submit"></button>
-        <button class="modal__close"><span class="visually-hidden">Закрыть</span></button>
+        <button class="modal__submit-btn  btn" type="submit">Отправить</button>
+        <button class="modal__close-btn" type="button"><span class="visually-hidden">Закрыть</span></button>
       </form>
     </section>
-    <section class="modal  modal-map">
+    <section class="modal  modal--map">
       <h2 class="visually-hidden">Схема проезда</h2>
-      <picture>
-        <source type="image/webp" srcset="img/map-big.webp">
-        <img src="img/map-big.jpg" width="960" height="559" alt="Схема проезда">
-      </picture>
+      <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125485500984!2d37.527777543827675!3d55.687030986236735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1509891541145" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <!-- <picture>
+          <source type="image/webp" srcset="img/map-big.webp">
+          <img src="img/map-big.jpg" width="960" height="559" alt="Схема проезда">
+        </picture> -->
+      </div>
+      <button class="modal__close-btn" type="button"><span class="visually-hidden">Закрыть</span></button>
     </section>
     <script src="js/script.js"></script>
     <script src="js/jquery-3.2.1.min.js"></script>
