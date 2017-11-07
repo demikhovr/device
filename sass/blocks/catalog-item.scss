@@ -1,0 +1,156 @@
+.catalog-item {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  margin-right: 40px;
+  margin-top: 50px;
+
+  &:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  &--new {
+    &::before {
+      content: "New";
+      position: absolute;
+      top: 29px;
+      right: 27px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 60px;
+      height: 60px;
+      padding-top: 2px;
+      padding-left: 2px;
+
+      font-weight: 800;
+      font-size: 14px;
+      line-height: 14px;
+      font-family: $font-gilroy;
+      color: rgba($black, 0.2);
+      text-transform: uppercase;
+
+      border: 2px solid rgba($black, 0.1);
+      border-radius: 50%;
+    }
+  }
+}
+
+.catalog-item__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  order: 2;
+}
+
+.catalog-item__title {
+  width: 260px;
+  margin: 0;
+
+  a {
+    display: block;
+
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+    font-family: $font-gilroy;
+    color: $black;
+    letter-spacing: 0.2px;
+
+    outline: none;
+
+    transition: color 0.1s linear;
+
+    &:hover,
+    &:focus {
+      color: rgba($black, 0.6);
+    }
+
+    &:active {
+      color: rgba($black, 0.3);
+    }
+  }
+}
+
+.catalog-item__price {
+  width: 100px;
+  margin: 0;
+  padding-left: 20px;
+
+  font-weight: 300;
+  font-family: $font-gilroy;
+  text-align: right;
+  letter-spacing: 0.7px;
+}
+
+.catalog-item__pic-wrapper {
+  position: relative;
+
+  order: 1;
+  margin-bottom: 30px;
+
+  .catalog-item__pic {
+    display: block;
+  }
+
+  &:hover {
+    .catalog-item__hover {
+      opacity: 1;
+    }
+  }
+}
+
+.catalog-item__hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+
+  width: 100%;
+  height: 100%;
+
+  text-align: center;
+
+  background-color: rgba(#eeeeee, 0.7);
+  opacity: 0;
+
+  transition: opacity 0.1s linear;
+}
+
+.catalog-item__hover-btn {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 177px;
+  margin-bottom: 11px;
+
+  font-size: 18px;
+  letter-spacing: 3.5px;
+}
+
+.catalog-item__hover-compare {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 36px;
+  color: rgba($black, 0.5);
+
+  outline: none;
+
+  transition: color 0.1s linear;
+
+  &:hover,
+  &:focus {
+    color: rgba($black, 1);
+  }
+
+  &:active {
+    color: rgba($black, 0.2);
+  }
+}

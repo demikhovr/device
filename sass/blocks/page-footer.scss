@@ -79,7 +79,14 @@
 }
 
 .page-footer__user-nav {
+  justify-content: space-between;
   margin-bottom: 34px;
+
+  .user-nav__item {
+    width: auto;
+    margin-right: 0;
+  }
+
   .user-nav__link {
     color: rgba($white, 0.7);
 
@@ -142,6 +149,7 @@
     background-image: url("../img/logo-html.svg");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 27px 35px;
     outline: none;
 
     transition: opacity 0.1s linear;

@@ -1,0 +1,190 @@
+.filters {
+  display: flex;
+
+  background-color: $bg-light-grey;
+}
+
+.filters__wrapper {
+  width: 328px;
+  margin-left: auto;
+  padding-right: 68px;
+  padding-left: 60px;
+}
+
+.filters__header {
+  margin-bottom: 71px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+
+  background-color: #dbdbdb;
+}
+
+.filters__title {
+  width: 328px;
+  margin: 0;
+  margin-left: auto;
+  padding-right: 68px;
+  padding-left: 60px;
+
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 16px;
+  font-family: $font-gilroy;
+  color: $black;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.filters__field {
+  position: relative;
+
+  margin: 0;
+  margin-bottom: 41px;
+  padding: 0;
+
+  border: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 100%;
+    left: 0;
+
+    width: 100%;
+    height: 2px;
+
+    background-color: $black;
+  }
+}
+
+.filters__field-title {
+  margin-bottom: 27px;
+  padding-top: 13px;
+
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 18px;
+  font-family: $font-gilroy;
+  text-align: left;
+  color: $black;
+}
+
+.filters__price {
+  margin-top: 9px;
+}
+
+.filters__price-scale {
+  position: relative;
+
+  width: 100%;
+  height: 2px;
+  margin-bottom: 10px;
+
+  background-color: #dbdbdb;
+  cursor: pointer;
+}
+
+.filters__price-bar {
+  width: 53%;
+  height: 2px;
+
+  background-color: #91c92f;
+}
+
+.filters__price-toggle {
+  position: absolute;
+  top: 50%;
+
+  width: 20px;
+  height: 20px;
+
+  background-color: $white;
+  border-radius: 50%;
+  box-shadow: 0 2px 0 0 #dadada;
+  transform: translateY(-50%);
+  cursor: pointer;
+
+  transition: transform 0.05s linear, background-color 0.05s linear;
+
+  &--min {
+    left: 0;
+  }
+
+  &--max {
+    left: 53%;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+
+    width: 4px;
+    height: 4px;
+
+    background-color: #ababab;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+
+    transition: background-color 0.05s linear;
+  }
+
+  &:hover,
+  &:focus {
+    transform: translateY(-50%) scale(1.1);
+  }
+
+  &:active {
+    background-color: #91c92f;
+
+    &::before {
+      background-color: $white;
+    }
+  }
+}
+
+.filters__price-descr {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: $font-gilroy;
+  color: rgba($black, 0.2);
+
+  input {
+    width: 60px;
+    height: 20px;
+    margin-right: 3px;
+
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: $font-gilroy;
+    color: rgba($black, 0.2);
+
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+}
+
+.filters__field-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.filters__btn {
+  z-index: 10;
+
+  width: 200px;
+  margin-top: 48px;
+
+  font-size: 18px;
+  letter-spacing: 3px;
+
+  border: none;
+}

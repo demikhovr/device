@@ -1,0 +1,139 @@
+.catalog {
+  display: flex;
+}
+
+.catalog__sort {
+  background-color: $bg-light-grey;
+}
+
+.catalog__sort-wrapper {
+  display: flex;
+  align-items: baseline;
+  width: 832px;
+  padding: 27px 0 27px 73px;
+}
+
+.catalog__sort-title {
+  margin: 0;
+  margin-right: 50px;
+
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 16px;
+  font-family: $font-gilroy;
+  color: $black;
+  text-transform: uppercase;
+  letter-spacing: 3.7px;
+}
+
+.catalog__sort-list {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.catalog__sort-item {
+  display: flex;
+  &:last-child .catalog__sort-btn {
+    margin-right: 0;
+  }
+
+  &--active {
+    .catalog__sort-btn {
+      color: rgba($black, 1);
+
+      &:hover,
+      &:focus {
+        color: rgba($black, 1);
+      }
+    }
+  }
+
+  &--arrow {
+    a {
+      width: 0;
+      height: 0;
+
+      border: 5px solid transparent;
+      border-top: none;
+      border-bottom: 11px solid rgba($black, 0.2);
+      outline: none;
+
+      transition: border-color 0.1s linear;
+
+      &:hover,
+      &:focus {
+        border-bottom-color: rgba($black, 0.6);
+      }
+
+      &:active {
+        border-bottom-color: rgba($black, 1);
+      }
+    }
+  }
+
+  &--arrow-up {
+    margin-left: auto;
+  }
+
+  &--arrow-down {
+    a {
+      margin-left: 19px;
+
+      transform: rotate(180deg);
+    }
+  }
+
+  &--arrow-active {
+    a {
+      border-bottom-color: rgba($black, 1);
+
+      &:hover,
+      &:focus {
+        border-bottom-color: rgba($black, 1);
+      }
+    }
+  }
+}
+
+.catalog__sort-btn {
+  margin-right: 30px;
+
+  font-size: 14px;
+  line-height: 14px;
+  color: rgba($black, 0.3);
+
+  outline: none;
+
+  transition: color 0.1s linear;
+
+  &:hover,
+  &:focus {
+    color: rgba($black, 0.6);
+  }
+
+  &:active {
+    color: rgba($black, 1);
+  }
+}
+
+.catalog__wrapper {
+  width: 832px;
+  margin-right: auto;
+  padding: 19px 0 73px 72px;
+}
+
+.catalog__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 0;
+  margin-bottom: 39px;
+  padding: 0;
+
+  list-style: none;
+}
